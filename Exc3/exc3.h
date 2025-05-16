@@ -35,6 +35,6 @@ int List_Is_Empty(List* list);
 int List_Is_Full(List* list);
 void Print_List(List* list);
 
-int Insert_in_second_List(List* list, Student data);
+int Insert_in_Any_Position(List* list, Student data, int position);
 
 #endif //EXC3_H

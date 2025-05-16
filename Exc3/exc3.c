@@ -240,7 +240,7 @@ void Print_List(List* list) {
 
 }
 
-int Insert_in_second_List(List* list, Student data) {
+int Insert_in_Any_Position(List* list, Student data, int position) {
 
     if (list == NULL) {
         return 0;
@@ -253,13 +253,28 @@ int Insert_in_second_List(List* list, Student data) {
 
     element->data = data;
 
-    if (*list == NULL) {
+    if (position == 0) {
+        element->next = *list;
         *list = element;
-        element->next = NULL;
         return 1;
     }
 
-    element->next = (*list)->next;
-    (*list)->next = element;
+    int cont = 1;
+    Element *current = *list;
+
+    while (cont < position && current != NULL) {
+        current = current->next;
+        cont++;
+    }
+
+    if (current == NULL) {
+        free(element);
+        return 0;
+    }
+
+    element->next = current->next;
+    current->next = element;
+
     return 1;
+
 }

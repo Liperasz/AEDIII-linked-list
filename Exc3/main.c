@@ -21,10 +21,13 @@ int main () {
     printf("Tamanho: %d\n\n\n\n", List_Length(list));
     Print_List(list);
 
-    Insert_in_second_List(list, a[1]);
-    Insert_in_second_List(list, a[1]);
-    Insert_in_second_List(list, a[2]);
-    Insert_in_second_List(list, a[2]);
+    Insert_in_Any_Position(list, a[2], 0);
+    Insert_in_Any_Position(list, a[2], 1);
+    Insert_in_Any_Position(list, a[2], 10);//Esse vai dar erro
+    Insert_in_Any_Position(list, a[2], 6);
+
+
+
 
     printf("Tamanho: %d\n\n\n\n", List_Length(list));
     Print_List(list);
