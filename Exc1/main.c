@@ -32,6 +32,54 @@ int main() {
         Insert_Order_List(list,a[i]);
     Print_List(list);
 
+    Student* studentsearch = Search_Student_ID(list, 3);
+
+    if (studentsearch != NULL) {
+
+        printf("Aluno encontrado (ID = 3): %s\n", studentsearch->name);
+
+    } else {
+
+        printf("Aluno com ID = 3 nao encontrado.\n");
+    }
+
+    studentsearch = Search_Student_ID(list, 99);
+
+    if (studentsearch != NULL) {
+
+        printf("Aluno encontrado (ID = 99): %s\n", studentsearch->name);
+
+    } else {
+
+        printf("Aluno com ID = 99 nao encontrado.\n");
+    }
+
+    printf("\n\n\n\nTestando busca por posicao:\n");
+
+    studentsearch = Search_Student_Position(list, 2);
+
+    if (studentsearch != NULL) {
+
+        printf("Aluno na posicao 2: %s\n", studentsearch->name);
+
+    } else {
+
+        printf("Nenhum aluno na posicao 2.\n");
+
+    }
+
+    studentsearch = Search_Student_Position(list, 10);
+
+    if (studentsearch != NULL) {
+
+        printf("Aluno na posicao 10: %s\n", studentsearch->name);
+
+    } else {
+
+        printf("Nenhum aluno na posicao 10.\n");
+
+    }
+
     Free_List(list);
     system("pause");
     return 0;
