@@ -211,3 +211,8 @@ void remove_duplicatas(Lista* li) {
         atual = atual->prox;
     }
 }
+//  Tratamento de erros( verificando se a lista está vazia e se o ponteiro existe) 
+// Usa o ponteiro atual para percorrer a lista
+//Loop principal para cada atual , compara atual com os próximos nós
+// Loop Interno que busca as duplicatas
+// e por fim avança atual para o próximo nó
