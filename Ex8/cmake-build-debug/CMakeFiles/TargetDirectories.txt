@@ -1,0 +1,3 @@
+C:/Users/Pichau/Desktop/Ex7/cmake-build-debug/CMakeFiles/Ex7.dir
+C:/Users/Pichau/Desktop/Ex7/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Pichau/Desktop/Ex7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
